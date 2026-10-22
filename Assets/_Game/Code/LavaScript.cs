@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class LavaScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public int damage = 10;
+    public //PlayerHealth Phealth
 
-    // Update is called once per frame
-    void Update()
+
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (CompareTag("Player"))
+        {
+            //Phealth.damage(amount)
+        }
     }
 }
